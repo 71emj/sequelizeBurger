@@ -1,0 +1,113 @@
+html {
+   min-height: 100%;
+}
+
+body {
+   padding: 5rem 0 2rem 0;
+   min-height: 90vh;
+}
+
+footer {
+   position: fixed;
+   bottom: 0;
+   height: 5rem;
+   width: 100%;
+}
+
+.header.col.s6,
+.body.col.s6 {
+   padding: .75rem .75rem;
+}
+
+.img {
+   height: 100%;
+   margin: auto;
+   background: url("/assets/img/burger.svg");
+   background-size: 50vh;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   height: 72px;
+   padding: 1rem 0 1rem 0;
+   line-height: 1.5;
+   box-shadow: none;
+}
+
+.nav-wrapper {
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2rem;
+}
+
+.nav-wrapper>.brand-logo {
+   position: relative;
+}
+
+#nav-mobile {
+   display: inline-block;
+   line-height: 2;
+}
+
+#burger_name {
+   font-size: 28px;
+   padding: 1.2rem 0 1.2rem 0;
+   border-bottom: 1px dashed white;
+}
+
+.align-padding {
+   position: relative;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 0 10px;
+}
+
+.align-btns {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: flex-start;
+   justify-content: flex-start;
+   width: 80%;
+   padding: 0 10px;
+}
+
+.body .align-btns {
+   float: right;
+   position: relative;
+   bottom: 0;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: flex-start;
+   justify-content: flex-end;
+   height: 100%;
+   width: 60%;
+   margin-top: 3rem;
+   padding: 0 10px;
+}
+
+.align-btns .btn {
+   display: table;
+   text-align: left;
+}
+
+.align-btns>li {
+   margin: .5rem .6rem;
+}
+
+.disabled {
+   opacity: 0.8;
+}
+
+/*.hover {
+   content: "Eat Again ?";
+   opacity: 1;
+   background-color: red;
+}*/
