@@ -13,7 +13,11 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
-    "mysql" "mysql://ehgvrjkwvnqt7kvv:zx4z8ok8z1jgyccb@ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/oxkuejawg3y3daxl"
+   "production": {
+    "username": "ehgvrjkwvnqt7kvv",
+    "password": "zx4z8ok8z1jgyccb",
+    "database": "oxkuejawg3y3daxl",
+    "host": "ol5tz0yvwp930510.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
   }
 }

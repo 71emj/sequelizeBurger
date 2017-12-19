@@ -22,7 +22,8 @@ emitter.once("server-init", function(initMsg) {
    DEBUG && console.log(initMsg);
 
    // setup file connections
-   const controller = require(Join(__dirname, "controllers/burgers_controller.js"))(emitter),      dataBase = require(Join(__dirname, "models"));
+   const controller = require(Join(__dirname, "controllers/burgers_controller.js"))(emitter),      
+      dataBase = require(Join(__dirname, "models"));
       // models = require(Join(__dirname, "models/burger.js"))(emitter, sql); // return Handlebars
 
    app.use(BodyParser.urlencoded({ extended: false }));
@@ -37,7 +38,7 @@ emitter.once("server-init", function(initMsg) {
    app.get("/*", controller);
    app.post("/eat-da-burger", controller);
    app.put("/eat-da-burger/*", controller);
-  
+   
    // DEBUG && emitter.emit("first-test");
    dataBase.sequelize.sync().then(() => {
       emitter.emit("sql-connected");   
